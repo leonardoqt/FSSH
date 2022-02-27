@@ -85,7 +85,7 @@ int main()
 				//EE.try_decoherence(AA);
 				AA.try_hop(HH,EE.rho_fock_old,EE.hop_bath);
 				time_evo.add(iter,AA.ek,AA.etot,AA.istate,AA.nhops);
-				cout<<iter*time_evo.dt<<'\t'<<abs(EE.rho_fock(0,0))<<'\t'<<abs(EE.rho_fock(1,1))<<endl;
+				//cout<<iter*time_evo.dt<<'\t'<<abs(EE.rho_fock(0,0))<<'\t'<<abs(EE.rho_fock(1,1))<<endl;
 				if (abs(AA.check_stop()))
 					break;
 			}

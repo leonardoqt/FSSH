@@ -13,6 +13,7 @@ void ionic::init(double Mass, double X, double V, int state, double Dt, int Peri
 	istate = state;
 	xendl = Xendl;
 	xendr = Xendr;
+	nhops = 0;
 }
 
 void ionic::move(potential& HH)
